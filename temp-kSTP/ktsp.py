@@ -171,4 +171,6 @@ for i in range(n):
         if edge1 == edge2:
             count_k += 1
 
+assert count_k >= k
+
 print("count_k: {}".format(count_k))
