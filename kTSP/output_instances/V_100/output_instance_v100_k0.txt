@@ -1,0 +1,92 @@
+n = 100
+k = 0
+Set parameter Username
+Academic license - for non-commercial use only - expires 2022-06-09
+Set parameter TimeLimit to value 1800
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (linux64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 10101 rows, 14850 columns and 44550 nonzeros
+Model fingerprint: 0x4173ae20
+Variable types: 0 continuous, 14850 integer (14850 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e+00, 2e+00]
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.05s
+Presolved: 10100 rows, 14850 columns, 39600 nonzeros
+Variable types: 0 continuous, 14850 integer (14850 binary)
+
+Root relaxation: objective 1.529000e+03, 325 iterations, 0.02 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1529.00000    0   24          - 1529.00000      -     -    0s
+     0     0 1540.50000    0   24          - 1540.50000      -     -    0s
+     0     0 1541.50000    0   18          - 1541.50000      -     -    0s
+     0     0 1545.00000    0   12          - 1545.00000      -     -    0s
+     0     0 1546.25000    0   30          - 1546.25000      -     -    0s
+     0     0 1547.08333    0   64          - 1547.08333      -     -    0s
+     0     0 1547.33333    0   73          - 1547.33333      -     -    0s
+     0     0 1548.50000    0   27          - 1548.50000      -     -    0s
+     0     0 1550.50000    0   28          - 1550.50000      -     -    0s
+     0     0 1550.50000    0   30          - 1550.50000      -     -    0s
+     0     0 1550.50000    0   22          - 1550.50000      -     -    0s
+     0     0 1550.50000    0   18          - 1550.50000      -     -    0s
+     0     0 1550.50000    0   18          - 1550.50000      -     -    0s
+     0     0 1550.66667    0   26          - 1550.66667      -     -    0s
+     0     0 1552.70000    0   60          - 1552.70000      -     -    0s
+     0     0 1552.70000    0   61          - 1552.70000      -     -    0s
+     0     0 1567.25000    0   72          - 1567.25000      -     -    0s
+     0     0 1568.25000    0   55          - 1568.25000      -     -    0s
+     0     0 1569.33333    0   73          - 1569.33333      -     -    0s
+     0     0 1569.66667    0   76          - 1569.66667      -     -    0s
+     0     0 1569.91667    0   79          - 1569.91667      -     -    0s
+     0     0 1570.83333    0   83          - 1570.83333      -     -    0s
+     0     0 1571.16667    0   87          - 1571.16667      -     -    0s
+     0     0 1571.16667    0   89          - 1571.16667      -     -    0s
+     0     0 1571.50000    0   61          - 1571.50000      -     -    0s
+     0     0 1571.50000    0   38          - 1571.50000      -     -    0s
+     0     0 1575.50000    0   32          - 1575.50000      -     -    0s
+     0     2 1575.50000    0   32          - 1575.50000      -     -    1s
+*  482   461             102    1663.0000000 1585.50000  4.66%   6.5    3s
+H  553   477                    1662.0000000 1586.00000  4.57%   7.1    3s
+H  556   462                    1657.0000000 1586.00000  4.28%   7.1    3s
+H 1031   740                    1645.0000000 1586.00000  3.59%   7.1    5s
+H 1044   593                    1639.0000000 1586.00000  3.23%   7.1    5s
+H 1047   544                    1632.0000000 1625.25000  0.41%   7.1    5s
+* 1057   525              23    1629.9999994 1630.00000  0.00%   7.6    5s
+
+Cutting planes:
+  Gomory: 30
+  Clique: 5
+  MIR: 1
+  Flow cover: 4
+  Zero half: 27
+
+Explored 1057 nodes (9085 simplex iterations) in 5.34 seconds (2.76 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 7: 1630 1632 1639 ... 1663
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.629999999417e+03, best bound 1.629999999417e+03, gap 0.0000%
+
+User-callback calls 3089, time in user-callback 0.60 sec
+
+
+TSP_1:
+Optimal tour tsp1: [0, 31, 9, 32, 92, 51, 87, 61, 42, 40, 8, 74, 95, 67, 13, 83, 75, 84, 38, 70, 52, 18, 89, 85, 98, 46, 35, 44, 2, 66, 1, 41, 14, 91, 3, 64, 93, 60, 48, 16, 33, 45, 69, 97, 53, 54, 30, 24, 15, 79, 36, 20, 6, 71, 99, 77, 29, 39, 94, 11, 62, 63, 76, 23, 37, 65, 59, 57, 78, 17, 81, 80, 49, 27, 90, 96, 86, 56, 25, 47, 28, 7, 34, 88, 50, 10, 19, 21, 58, 82, 4, 26, 12, 5, 55, 72, 68, 22, 43, 73]
+Optimal cost tsp1: 802
+
+TSP_2:
+Optimal tour tsp2: [0, 40, 76, 42, 74, 94, 75, 77, 43, 35, 63, 51, 58, 34, 50, 82, 53, 6, 36, 62, 86, 28, 22, 71, 79, 46, 37, 13, 9, 54, 7, 21, 47, 65, 44, 99, 91, 26, 8, 64, 88, 85, 60, 24, 84, 11, 98, 49, 41, 73, 33, 18, 97, 81, 95, 3, 29, 59, 57, 4, 27, 78, 14, 23, 19, 5, 31, 55, 10, 30, 68, 20, 89, 15, 39, 70, 48, 45, 92, 1, 87, 93, 90, 56, 25, 69, 66, 32, 61, 96, 38, 67, 72, 2, 17, 52, 12, 80, 16, 83]
+Optimal cost tsp2: 828
+
+count_k: 2 checked! =)
+Total optimal cost: 1629.999999416667
+Seconds to run the model: 5.401593446731567
+
