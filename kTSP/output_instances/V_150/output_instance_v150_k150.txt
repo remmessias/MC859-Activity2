@@ -1,0 +1,76 @@
+n = 150
+k = 150
+Set parameter Username
+Academic license - for non-commercial use only - expires 2022-06-09
+Set parameter TimeLimit to value 1800
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (linux64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 22651 rows, 33525 columns and 100575 nonzeros
+Model fingerprint: 0x67017ad8
+Variable types: 0 continuous, 33525 integer (33525 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e+00, 2e+02]
+Presolve time: 0.07s
+Presolved: 22651 rows, 33525 columns, 100575 nonzeros
+Variable types: 0 continuous, 33525 integer (33525 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Concurrent spin time: 0.00s
+
+Solved with dual simplex
+
+Root relaxation: objective 4.718000e+03, 19216 iterations, 1.73 seconds (2.84 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 4718.00000    0   18          - 4718.00000      -     -    1s
+     0     0 4723.00000    0   18          - 4723.00000      -     -    2s
+     0     0 4728.00000    0   30          - 4728.00000      -     -    2s
+     0     0 4729.00000    0   24          - 4729.00000      -     -    2s
+     0     0 4749.50000    0   18          - 4749.50000      -     -    3s
+     0     0 4757.00000    0   18          - 4757.00000      -     -    3s
+     0     0 4758.50000    0   30          - 4758.50000      -     -    3s
+     0     0 4776.25000    0   54          - 4776.25000      -     -    4s
+     0     0 4777.00000    0   45          - 4777.00000      -     -    4s
+     0     0 4777.50000    0  135          - 4777.50000      -     -    4s
+     0     0 4777.50000    0   96          - 4777.50000      -     -    5s
+     0     0 4777.50000    0   72          - 4777.50000      -     -    8s
+     0     2 4777.50000    0   72          - 4777.50000      -     -   10s
+    15    20 4780.00000    4   18          - 4777.68627      -  92.8   15s
+*   19    22               5    4780.0000000 4777.68627  0.05%  91.7   15s
+
+Cutting planes:
+  Gomory: 1
+  Zero half: 29
+  Lazy constraints: 26
+
+Explored 51 nodes (23726 simplex iterations) in 15.74 seconds (21.24 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 4780 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.780000000000e+03, best bound 4.780000000000e+03, gap 0.0000%
+
+User-callback calls 3252, time in user-callback 0.45 sec
+
+
+TSP_1:
+Optimal tour tsp1: [0, 105, 32, 61, 67, 38, 52, 75, 83, 40, 42, 74, 51, 108, 82, 58, 34, 50, 21, 7, 146, 47, 132, 35, 109, 117, 116, 86, 28, 141, 46, 139, 130, 88, 137, 64, 104, 144, 71, 79, 99, 24, 15, 20, 114, 136, 30, 97, 142, 33, 60, 48, 45, 93, 91, 145, 1, 44, 85, 98, 143, 84, 70, 129, 89, 100, 133, 18, 10, 19, 124, 12, 17, 123, 80, 112, 25, 56, 90, 96, 69, 135, 16, 138, 103, 118, 66, 2, 128, 125, 14, 3, 41, 49, 11, 39, 29, 23, 140, 27, 120, 147, 57, 115, 78, 59, 81, 101, 4, 122, 95, 31, 148, 73, 68, 149, 55, 111, 5, 131, 72, 110, 76, 63, 126, 94, 77, 102, 54, 53, 6, 36, 113, 62, 119, 37, 65, 106, 127, 121, 26, 8, 13, 87, 92, 9, 22, 107, 43, 134]
+Optimal cost tsp1: 2314
+
+TSP_2:
+Optimal tour tsp2: [0, 105, 32, 61, 67, 38, 52, 75, 83, 40, 42, 74, 51, 108, 82, 58, 34, 50, 21, 7, 146, 47, 132, 35, 109, 117, 116, 86, 28, 141, 46, 139, 130, 88, 137, 64, 104, 144, 71, 79, 99, 24, 15, 20, 114, 136, 30, 97, 142, 33, 60, 48, 45, 93, 91, 145, 1, 44, 85, 98, 143, 84, 70, 129, 89, 100, 133, 18, 10, 19, 124, 12, 17, 123, 80, 112, 25, 56, 90, 96, 69, 135, 16, 138, 103, 118, 66, 2, 128, 125, 14, 3, 41, 49, 11, 39, 29, 23, 140, 27, 120, 147, 57, 115, 78, 59, 81, 101, 4, 122, 95, 31, 148, 73, 68, 149, 55, 111, 5, 131, 72, 110, 76, 63, 126, 94, 77, 102, 54, 53, 6, 36, 113, 62, 119, 37, 65, 106, 127, 121, 26, 8, 13, 87, 92, 9, 22, 107, 43, 134]
+Optimal cost tsp2: 2466
+
+count_k: 150 checked! =)
+Total optimal cost: 4780.000000000002
+Seconds to run the model: 15.757349729537964
+

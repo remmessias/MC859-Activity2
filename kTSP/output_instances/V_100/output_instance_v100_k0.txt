@@ -15,11 +15,11 @@ Coefficient statistics:
   Bounds range     [1e+00, 1e+00]
   RHS range        [2e+00, 2e+00]
 Presolve removed 1 rows and 0 columns
-Presolve time: 0.05s
+Presolve time: 0.07s
 Presolved: 10100 rows, 14850 columns, 39600 nonzeros
 Variable types: 0 continuous, 14850 integer (14850 binary)
 
-Root relaxation: objective 1.529000e+03, 325 iterations, 0.02 seconds (0.01 work units)
+Root relaxation: objective 1.529000e+03, 325 iterations, 0.01 seconds (0.01 work units)
 
     Nodes    |    Current Node    |     Objective Bounds      |     Work
  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
@@ -55,8 +55,8 @@ Root relaxation: objective 1.529000e+03, 325 iterations, 0.02 seconds (0.01 work
 *  482   461             102    1663.0000000 1585.50000  4.66%   6.5    3s
 H  553   477                    1662.0000000 1586.00000  4.57%   7.1    3s
 H  556   462                    1657.0000000 1586.00000  4.28%   7.1    3s
-H 1031   740                    1645.0000000 1586.00000  3.59%   7.1    5s
-H 1044   593                    1639.0000000 1586.00000  3.23%   7.1    5s
+H 1031   740                    1645.0000000 1586.00000  3.59%   7.1    4s
+H 1044   593                    1639.0000000 1586.00000  3.23%   7.1    4s
 H 1047   544                    1632.0000000 1625.25000  0.41%   7.1    5s
 * 1057   525              23    1629.9999994 1630.00000  0.00%   7.6    5s
 
@@ -67,7 +67,7 @@ Cutting planes:
   Flow cover: 4
   Zero half: 27
 
-Explored 1057 nodes (9085 simplex iterations) in 5.34 seconds (2.76 work units)
+Explored 1057 nodes (9085 simplex iterations) in 5.08 seconds (2.76 work units)
 Thread count was 8 (of 8 available processors)
 
 Solution count 7: 1630 1632 1639 ... 1663
@@ -75,7 +75,7 @@ Solution count 7: 1630 1632 1639 ... 1663
 Optimal solution found (tolerance 1.00e-04)
 Best objective 1.629999999417e+03, best bound 1.629999999417e+03, gap 0.0000%
 
-User-callback calls 3089, time in user-callback 0.60 sec
+User-callback calls 3076, time in user-callback 0.55 sec
 
 
 TSP_1:
@@ -88,5 +88,5 @@ Optimal cost tsp2: 828
 
 count_k: 2 checked! =)
 Total optimal cost: 1629.999999416667
-Seconds to run the model: 5.401593446731567
+Seconds to run the model: 5.120773077011108
 

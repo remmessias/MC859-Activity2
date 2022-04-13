@@ -1,0 +1,92 @@
+n = 100
+k = 100
+Set parameter Username
+Academic license - for non-commercial use only - expires 2022-06-09
+Set parameter TimeLimit to value 1800
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (linux64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 10101 rows, 14850 columns and 44550 nonzeros
+Model fingerprint: 0xbecf965c
+Variable types: 0 continuous, 14850 integer (14850 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e+00, 1e+02]
+Presolve time: 0.03s
+Presolved: 10101 rows, 14850 columns, 44550 nonzeros
+Variable types: 0 continuous, 14850 integer (14850 binary)
+
+Root relaxation: objective 3.428000e+03, 9460 iterations, 0.38 seconds (0.62 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 3428.00000    0   18          - 3428.00000      -     -    0s
+     0     0 3434.50000    0   36          - 3434.50000      -     -    0s
+     0     0 3435.50000    0   18          - 3435.50000      -     -    0s
+     0     0 3435.50000    0   24          - 3435.50000      -     -    0s
+     0     0 3436.00000    0   54          - 3436.00000      -     -    0s
+     0     0 3436.00000    0   36          - 3436.00000      -     -    0s
+     0     0 3437.00000    0   84          - 3437.00000      -     -    1s
+     0     0 3437.00000    0   69          - 3437.00000      -     -    1s
+     0     0 3437.50000    0   84          - 3437.50000      -     -    1s
+     0     0 3438.00000    0   78          - 3438.00000      -     -    1s
+     0     0 3438.00000    0  126          - 3438.00000      -     -    1s
+     0     0 3438.50000    0   48          - 3438.50000      -     -    1s
+     0     0 3438.50000    0   48          - 3438.50000      -     -    1s
+     0     0 3439.00000    0  111          - 3439.00000      -     -    1s
+     0     0 3439.00000    0  111          - 3439.00000      -     -    1s
+     0     0 3439.11111    0   75          - 3439.11111      -     -    1s
+     0     0 3439.11111    0  138          - 3439.11111      -     -    1s
+     0     0 3439.11111    0  126          - 3439.11111      -     -    1s
+     0     0 3439.33333    0  135          - 3439.33333      -     -    1s
+     0     0 3443.00000    0   30          - 3443.00000      -     -    1s
+     0     0 3443.50000    0   30          - 3443.50000      -     -    1s
+     0     0 3445.83333    0   48          - 3445.83333      -     -    2s
+     0     0 3447.33333    0  105          - 3447.33333      -     -    2s
+     0     0 3450.00000    0   42          - 3450.00000      -     -    2s
+     0     0 3450.50000    0   42          - 3450.50000      -     -    2s
+     0     0 3451.00000    0   36          - 3451.00000      -     -    2s
+     0     0 3451.00000    0   42          - 3451.00000      -     -    2s
+     0     0 3452.06250    0  132          - 3452.06250      -     -    2s
+     0     0 3452.71429    0  156          - 3452.71429      -     -    2s
+     0     0 3456.50000    0   48          - 3456.50000      -     -    2s
+     0     0 3458.25000    0   78          - 3458.25000      -     -    2s
+     0     0 3459.00000    0  108          - 3459.00000      -     -    3s
+     0     0 3459.25000    0  114          - 3459.25000      -     -    3s
+     0     0 3459.50000    0   96          - 3459.50000      -     -    3s
+     0     0 3459.75000    0  108          - 3459.75000      -     -    3s
+     0     0 3461.50000    0   78          - 3461.50000      -     -    3s
+     0     0 3461.66667    0  120          - 3461.66667      -     -    3s
+     0     0 3462.50000    0   84          - 3462.50000      -     -    3s
+*    0     0               0    3463.0000000 3463.00000  0.00%     -    3s
+
+Cutting planes:
+  Zero half: 36
+  Lazy constraints: 24
+
+Explored 1 nodes (16011 simplex iterations) in 3.73 seconds (4.66 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 3463 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.463000000000e+03, best bound 3.463000000000e+03, gap 0.0000%
+
+User-callback calls 957, time in user-callback 0.15 sec
+
+
+TSP_1:
+Optimal tour tsp1: [0, 32, 61, 67, 95, 31, 5, 55, 68, 73, 43, 22, 9, 92, 87, 13, 8, 26, 88, 64, 60, 48, 45, 93, 91, 44, 1, 47, 7, 21, 82, 58, 50, 34, 35, 66, 2, 16, 69, 96, 25, 56, 90, 49, 11, 39, 29, 23, 59, 81, 4, 57, 78, 27, 14, 3, 41, 33, 97, 30, 20, 15, 24, 99, 71, 79, 65, 37, 62, 63, 76, 94, 77, 54, 53, 6, 36, 86, 28, 46, 85, 98, 84, 70, 89, 18, 10, 19, 38, 52, 75, 83, 40, 74, 51, 42, 12, 17, 80, 72]
+Optimal cost tsp1: 1689
+
+TSP_2:
+Optimal tour tsp2: [0, 32, 61, 67, 95, 31, 5, 55, 68, 73, 43, 22, 9, 92, 87, 13, 8, 26, 88, 64, 60, 48, 45, 93, 91, 44, 1, 47, 7, 21, 82, 58, 50, 34, 35, 66, 2, 16, 69, 96, 25, 56, 90, 49, 11, 39, 29, 23, 59, 81, 4, 57, 78, 27, 14, 3, 41, 33, 97, 30, 20, 15, 24, 99, 71, 79, 65, 37, 62, 63, 76, 94, 77, 54, 53, 6, 36, 86, 28, 46, 85, 98, 84, 70, 89, 18, 10, 19, 38, 52, 75, 83, 40, 74, 51, 42, 12, 17, 80, 72]
+Optimal cost tsp2: 1774
+
+count_k: 100 checked! =)
+Total optimal cost: 3463.0
+Seconds to run the model: 3.7317490577697754
+
